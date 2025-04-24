@@ -1,0 +1,93 @@
+@import "tailwindcss";
+@plugin "daisyui";
+@plugin "@tailwindcss/typography";
+
+/* @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap'); */
+
+.logo {
+  font-family: "Work Sans", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 25px;
+}
+
+.to-suffix {
+  font-weight: 400;
+}
+
+.prose :where(ul):not(:where([class~="not-prose"], [class~="not-prose"] *)) {
+  padding-inline-start: 0;
+}
+
+#page .prose-2xl {
+  h1 {
+    font-size: 2.8rem;
+    font-weight: bold !important;
+    margin-bottom: 1.5rem;
+  }
+
+  h2 {
+    margin: 0;
+    margin-bottom: 1.75rem;
+    font-size: 1rem;
+  }
+
+  h3 {
+    margin: 0;
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    opacity: 0.75;
+  }
+
+  p {
+    margin: 0;
+    margin-bottom: 1.5rem;
+  }
+
+  p:last-child {
+    margin-bottom: 0;
+  }
+
+  hr {
+    margin: 1rem 0;
+    opacity: 0.25;
+  }
+
+  a {
+    text-decoration: underline;
+  }
+
+  ul,
+  li {
+    padding: 0;
+    font-size: 1rem;
+    opacity: 0.75;
+  }
+
+  .footnote-ref {
+    padding-right: 5px;
+    text-decoration: none;
+    opacity: 0.8;
+  }
+
+  .bp-img img,
+  .gallery img {
+    margin: 0;
+  }
+
+  .footnotes {
+    ul,
+    ol,
+    li {
+      font-size: 0.75rem;
+      padding-left: 0;
+      margin: 0;
+    }
+
+    a {
+      text-decoration: none;
+      padding-left: 0.5rem;
+    }
+  }
+}
